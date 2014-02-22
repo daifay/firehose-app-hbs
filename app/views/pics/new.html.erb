@@ -1,8 +1,8 @@
-<div class="smurfy">
+<div class="smurfy span3 offset4 ">
 	<%= simple_form_for @pic do |f| %>
-	<%= f.input :title %>
-  	<%= f.input :subtitle %>
-  	<%= f.input :message %>
-  	<%= f.button :submit %>
+	<%= f.input :title, label: 'What\' is this pic about?', placeholder: 'Turkish Delight' %>
+  	<%= f.input :subtitle, label: 'How is it?', placeholder: 'Sweet!' %>
+  	<%= f.input :message, label: 'What else...?', placeholder: 'Dozens of flavors'%>
+  	<%= f.submit "Add it", :class => 'btn btn-info btn-large' %>
 	<% end %>
 </div>
