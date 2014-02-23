@@ -20,20 +20,21 @@
       </a>
  
       <!-- Be sure to leave the brand out there if you want it shown -->
-      <a class="brand" href="#">Turkey</a>
+ <!--      <a class="brand" href= '#' >Turkey</a> -->
+      <%= link_to 'Turkey', root_path, :class => 'brand' %> 
  
       <!-- Everything you want hidden at 940px or less, place within here -->
       <div class="nav-collapse collapse">
         <!-- .nav, .navbar-search, .navbar-form, etc -->
         <ul class="nav">
         <li>
-        	<%= link_to 'Home', 'http://firehose-app-hbs-fay.herokuapp.com' %> 
+        	<%= link_to 'Home', root_path %> 
         </li>
          <li>
-        	<%= link_to 'Specialty', 'http://firehose-app-hbs-fay.herokuapp.com/pics' %> 
+        	<%= link_to 'Specialty', pics_path %> 
         </li>
         <li>
-        	<%= link_to 'New', 'http://firehose-app-hbs-fay.herokuapp.com/pics/new' %> 
+        	<%= link_to 'New', new_pic_path %> 
         </li>
       </div>
  
